@@ -1,0 +1,24 @@
+# Qwil
+
+> Qwil is a financial-technology company (a 500 Global portfolio company) that
+> operates a consumer-facing web and mobile application backed by a private,
+> authenticated REST API. The platform connects to users' bank accounts via
+> Plaid and uses Firebase for identity. Qwil does not publish a public API
+> specification, developer portal, or SDK documentation; the API at
+> api.qwil.co is private and partner-gated.
+
+## Company
+- [Website](https://qwil.co): Qwil marketing site (Webflow-hosted).
+- [Web application](https://app.qwil.com/): The Qwil web app ("Qwil WebApp"), where users sign in and link accounts.
+
+## API
+- API base: https://api.qwil.co (Django REST Framework; HTTP Bearer authentication; private/partner-gated; no public OpenAPI).
+
+## Enrichment artifacts (API Evangelist)
+- Authentication profile: authentication/qwil-authentication.yml
+- Domain security probe: security/qwil-domain-security.yml
+- Well-known discovery probe: well-known/qwil-well-known.yml
+- Package-registry search: packages/qwil-packages.yml
+
+## Notes
+- Do not confuse qwil.co (this company) with Qwil Messenger (qwil.io / GitHub org `qwilio`), a separate secure client-collaboration platform.

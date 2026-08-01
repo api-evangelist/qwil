@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: npm registry, PyPI, RubyGems registry searches
+description: >-
+  Public package-registry search for first-party Qwil (qwil.co) client libraries.
+  Qwil publishes no public SDK documentation and its API (api.qwil.co) is private
+  and authenticated. One historical Ruby gem named for the Qwil API exists but its
+  source repository (github.com/qwil/ruby-api-client) now returns 404, so
+  first-party status could not be verified — it is recorded as a candidate only
+  (official: false) and no canonical SDKs pointer is wired.
+  DISAMBIGUATION: the npm packages under the `qwilio` GitHub org
+  (qwil-iframe-api, qwil-api-transport, qwil-salesforce-app) and
+  `qwil-react-components` belong to a DIFFERENT company, Qwil Messenger (qwil.io),
+  a secure client-collaboration platform — they are NOT first-party to qwil.co and
+  are intentionally excluded.
+packages:
+- language: ruby
+  registry: rubygems
+  name: qwil_api
+  url: https://rubygems.org/gems/qwil_api
+  install: gem install qwil_api
+  official: false
+  status: candidate
+  note: >-
+    "API client for the Qwil API" (~13.6k historical downloads). Homepage
+    github.com/qwil/ruby-api-client returns 404; first-party ownership by qwil.co
+    could not be verified, so official is set false pending confirmation.
+notes:
+- No first-party package found on PyPI (qwil, qwil-sdk both 404).
+- No first-party package confirmed on npm for qwil.co.

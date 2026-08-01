@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live fetch of /.well-known/* paths on Qwil hosts
+description: >-
+  Results of probing the /.well-known/ discovery surface for Qwil hosts. Status is
+  the HTTP code observed at fetch time. The production API host (api.qwil.co)
+  returns 404 for every discovery path. The apex marketing hosts (qwil.co /
+  qwil.com) are served through Webflow and reject TLS handshakes from automated
+  clients, so their /.well-known/ surface could not be evaluated (recorded as
+  unreachable). No document returned a real payload, so no raw files were saved
+  and no WellKnown pointer is wired.
+hosts:
+- host: https://api.qwil.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://qwil.co
+  note: Webflow-fronted; TLS handshake rejected from automated clients (unreachable)
+  documents:
+  - path: /.well-known/security.txt
+    status: unreachable
