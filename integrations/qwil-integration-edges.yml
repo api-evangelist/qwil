@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/qwil/integrations
+- https://n8n.io/integrations/qwil/
+- https://composio.dev/toolkits/qwil
+- https://monid.ai/tools/qwil
+checked:
+- https://composio.dev/toolkits/qwil
+- https://monid.ai/tools/qwil
+- https://n8n.io/integrations/qwil/
+- https://zapier.com/apps/qwil/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
